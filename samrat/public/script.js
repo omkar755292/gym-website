@@ -25,7 +25,7 @@ SubmitForm.addEventListener("click", async (e) => {
         phone: Phone.value,
     };
     try {
-        const response = await fetch(`http://143.110.182.131:3000:3000/api/contact`, {
+        const response = await fetch(`http://64.227.132.137:5021/api/contact`, {
             method: "POST",
             headers: {
                 "Content-type": "application/json"
