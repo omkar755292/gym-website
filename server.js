@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const env = require('dotenv');
 const router = require('./routes/router');
 const connectDB = require('./config/connectionDB');
@@ -11,8 +12,9 @@ const port = process.env.PORT || 3000;
 connectDB();
 const app = express(); // Creating express app
 
-// SettingUp middleware 
+// SettingUp middleware
 app.use(express.json());
+app.use(express.static(path.join(__dirname,'public')));
 app.use('/api/contact', router);
 app.use(errorHandler);
 
