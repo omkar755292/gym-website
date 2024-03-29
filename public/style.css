@@ -80,15 +80,22 @@ main {
    width: 80%;
    padding: 8px;
 }
+#myForm{
+    margin: 10px;
+}
 .fitness-calci input{
     padding: 5px;
     margin: 2px;
     width: 40%;
 }
+.calci{
+    margin: 10px;
+}
 .btn2{
+    display: inline-block;
     background-color: transparent;
     padding: 10px;
-    margin-top: 15px;
+    margin: 10px 5px;
     font-size: 15px;
 }
 .btn2:hover{
