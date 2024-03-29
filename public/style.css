@@ -58,7 +58,7 @@ nav ul li a:hover{
 
 main {
     display: grid;
-    grid-template-columns: 60%;
+    grid-template-columns: 55%;
 }
 
 .container{
@@ -66,12 +66,17 @@ main {
     border: 2px solid white;
     background-color: rgba(0, 0, 0, 0.451);
     display: flex;
+    justify-content: center;
+    text-align: center;
     flex-direction: column;
     padding: 3vw;
     border-radius: 5px;
 }
 .info div{
     margin: 15px 0px;
+}
+.info {
+    text-align: left;
 }
 .contact-form{
     margin: 10px 0px;
