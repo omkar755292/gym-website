@@ -8,14 +8,10 @@ const SubmitForm = document.getElementById("submitForm");
 
 SubmitForm.addEventListener("click", async (e) => {
     e.preventDefault();
-    if(!Name.value.trim() || !Age.value.trim() || !Gender.value.trim() || !Locations.value.trim() || !Email.value.trim() || !Phone.value.trim()){
-        alert('All Fields are Mandory'); //Stop the function execution
+    if(!Name.value || !Age.value || !Gender.value || !Locations.value || !Email.value || !Phone.value){
+        alert('All Fields are Mandory'); 
         return;
     };
-    if (!Email.value.trim() || !Email.value.includes("@")) {
-        alert("Please Enter valid Email");
-        return;
-    }
     const obj = {
         name: Name.value,
         age: Age.value,
@@ -32,7 +28,6 @@ SubmitForm.addEventListener("click", async (e) => {
             },
             body: JSON.stringify(obj)
         });
-        // Resetting form to its initial state
         SubmitForm.form.reset();
 
     } catch (error) {
